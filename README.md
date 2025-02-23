@@ -1,39 +1,58 @@
-# Principles-of-compilation
-# 🛠️ Scheme Compiler in OCaml
-This repository contains my implementation of a compiler for Scheme, developed as part of the Compiler Construction course. The project is written in OCaml and includes key components such as lexical analysis, parsing, and code generation.
+```markdown
+# Scheme Compiler in OCaml 🚀
 
-## 📋 Project Overview
-The project consists of two assignments followed by a final project:
+This repository contains my implementation of a Scheme compiler, built as part of the Compiler Construction course. The compiler is written in OCaml and generates x86 assembly code compatible with the Linux ABI.
 
-| Assignment      | Description |
-|----------------|-------------|
-| **Assignment 1** | Implement lexical analysis and parsing by replacing `raise (X_not_yet_implemented "hw 1")` with the appropriate functionality. |
-| **Assignment 2** | Extend the compiler to handle more complex parsing and compilation tasks, replacing `raise (X_not_yet_implemented "hw 2")`. |
-| **Final Project** | Generate x86 assembly code for Scheme programs. This involves writing assembly code and testing it on an x86 machine with Linux ABI compatibility. |
+## Features 🛠️
+- **Lexical Analysis**: Tokenizing Scheme source code.
+- **Parsing**: Transforming code into an abstract syntax tree (AST).
+- **Code Generation**: Producing x86 assembly code.
 
-## 📂 File Structure
-- **compiler.ml**: Main OCaml file with the compiler’s implementation. Sections are marked for different phases of the project.
-- **makefile**: Automates assembling and linking generated assembly files.
-
-## 🧪 Compilation and Testing
-The compiler provides functions to compile and execute Scheme code:
-
-- `compile_scheme_string`: Compiles a Scheme expression into an assembly file.
-- `compile_and_run_scheme_string`: Compiles, assembles, and executes a Scheme expression for quick testing.
-
-### Example Usage
-```ocaml
-Code_Generation.compile_and_run_scheme_string "testing/goo" "(+ 2 3)"
+## Project Structure 📂
 ```
 
-## ⚠️ Notes
-- Ensure unnecessary debug output is removed to avoid incorrect results.
-- Frequent testing helps in debugging and refining the compiler.
+├── src/             # Source code for the compiler
+├── tests/           # Test cases for validation
+├── makefile         # Build automation
+└── README.md        # Project documentation
 
-## 📦 Requirements
-- **OCaml**: Required for implementation.
-- **NASM**: Needed for assembling the generated assembly code.
-- **Linux ABI**: Code generation is designed for Linux ABI, so testing requires an x86-compatible environment.
+````
 
-## 👨‍💻 Author
-This compiler was implemented as part of my Compiler Construction course project, following guidelines provided by Mayer Goldberg.
+## Getting Started 🚀
+### Prerequisites
+Ensure you have the following installed:
+- **OCaml** (for development and execution)
+- **NASM** (for assembling the generated assembly code)
+- **Linux ABI-compatible environment**
+
+### Installation
+Clone the repository and navigate into the project folder:
+```sh
+git clone https://github.com/yourusername/scheme-compiler.git
+cd scheme-compiler
+make
+````
+
+### Usage
+
+To compile and run a Scheme expression:
+
+```ocaml
+Code_Generation.compile_and_run_scheme_string "(+ 5 7)"
+```
+
+## Development Notes ⚠️
+
+- Debugging outputs should be removed before final execution.
+- Regular testing ensures compiler correctness.
+
+## Author 👨‍💻
+
+Developed as part of my Compiler Construction coursework under the guidance of Mayer Goldberg.
+
+## License 📜
+
+This project is for educational purposes. Contributions and forks are welcome!
+
+```
+```
