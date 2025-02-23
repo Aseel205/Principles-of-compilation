@@ -1,4 +1,3 @@
-```markdown
 # Scheme Compiler in OCaml 🚀
 
 This repository contains my implementation of a Scheme compiler, built as part of the Compiler Construction course. The compiler is written in OCaml and generates x86 assembly code compatible with the Linux ABI.
@@ -10,13 +9,11 @@ This repository contains my implementation of a Scheme compiler, built as part o
 
 ## Project Structure 📂
 ```
-
 ├── src/             # Source code for the compiler
 ├── tests/           # Test cases for validation
 ├── makefile         # Build automation
 └── README.md        # Project documentation
-
-````
+```
 
 ## Getting Started 🚀
 ### Prerequisites
@@ -31,28 +28,20 @@ Clone the repository and navigate into the project folder:
 git clone https://github.com/yourusername/scheme-compiler.git
 cd scheme-compiler
 make
-````
+```
 
 ### Usage
-
 To compile and run a Scheme expression:
-
 ```ocaml
 Code_Generation.compile_and_run_scheme_string "(+ 5 7)"
 ```
 
 ## Development Notes ⚠️
-
 - Debugging outputs should be removed before final execution.
 - Regular testing ensures compiler correctness.
 
 ## Author 👨‍💻
-
 Developed as part of my Compiler Construction coursework under the guidance of Mayer Goldberg.
 
 ## License 📜
-
 This project is for educational purposes. Contributions and forks are welcome!
-
-```
-```
