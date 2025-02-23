@@ -7,14 +7,6 @@ This repository contains my implementation of a Scheme compiler, built as part o
 - **Parsing**: Transforming code into an abstract syntax tree (AST).
 - **Code Generation**: Producing x86 assembly code.
 
-## Project Structure 📂
-```
-├── src/             # Source code for the compiler
-├── tests/           # Test cases for validation
-├── makefile         # Build automation
-└── README.md        # Project documentation
-```
-
 ## Getting Started 🚀
 ### Prerequisites
 Ensure you have the following installed:
